@@ -4,23 +4,23 @@ export const useContacts = () => {
   return [
     {
       href: "https://wa.me/your-number",
-      icon: <Phone className="h-6 w-6" />,
+      icon: <Phone className="h-5 sm:h-6 w-5 sm:w-6" />,
     },
     {
       href: "mailto:your-email@example.com",
-      icon: <Mail className="h-6 w-6" />,
+      icon: <Mail className="h-5 sm:h-6 w-5 sm:w-6" />,
     },
     {
       href: "https://instagram.com/your-username",
-      icon: <Instagram className="h-6 w-6" />,
+      icon: <Instagram className="h-5 sm:h-6 w-5 sm:w-6" />,
     },
     {
       href: "https://github.com/your-username",
-      icon: <Github className="h-6 w-6" />,
+      icon: <Github className="h-5 sm:h-6 w-5 sm:w-6" />,
     },
     {
       href: "https://linkedin.com/in/your-username",
-      icon: <Linkedin className="h-6 w-6" />,
+      icon: <Linkedin className="h-5 sm:h-6 w-5 sm:w-6" />,
     },
   ];
 };

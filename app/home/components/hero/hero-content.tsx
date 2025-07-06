@@ -2,7 +2,7 @@ export const HeroContent = () => {
   return (
     <>
       {/* Name */}
-      <h1 className="text-6xl md:text-8xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-text via-accent to-text dark:from-text-dark dark:via-accent dark:to-text-dark">
+      <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-text via-accent to-text dark:from-text-dark dark:via-accent dark:to-text-dark">
         RENDY DHARMAPUTRA
       </h1>
 

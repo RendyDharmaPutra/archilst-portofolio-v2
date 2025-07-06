@@ -3,6 +3,7 @@ export const HeroImage = () => {
     <div className="mb-8 flex justify-center">
       <div className="relative">
         <div className="absolute inset-0 rounded-full blur-xl animate-pulse bg-gradient-to-r from-accent/20 via-accent/5 to-accent/20 dark:from-accent/30 dark:via-accent/10 dark:to-accent/30"></div>
+        {/* Profile Photo */}
         <img
           src="/placeholder.svg?height=200&width=200"
           alt="Profile"
