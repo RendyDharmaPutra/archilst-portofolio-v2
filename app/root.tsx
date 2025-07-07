@@ -5,11 +5,22 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import { Header } from "./components/layouts/header/header";
 import { Footer } from "./components/layouts/footer/footer";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Archilst Portofolio" },
+    {
+      name: "description",
+      content:
+        "Software Developer yang berkembang ke arah Software Engineer dan Engineer secara menyeluruh. Membangun solusi melalui teknologi, desain sistem, dan eksplorasi kreatif dalam software maupun perangkat keras. Software Developer yang berkembang ke arah Software Engineer dan Engineer secara menyeluruh. Membangun solusi melalui teknologi, desain sistem, dan eksplorasi kreatif dalam software maupun perangkat keras.",
+    },
+  ];
+};
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },

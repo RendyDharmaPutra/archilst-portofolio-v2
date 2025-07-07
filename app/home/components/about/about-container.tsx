@@ -17,18 +17,15 @@ export const AboutContainer = () => {
           {/* Background */}
           <AboutCard
             title="Background"
-            content="Seorang Software Developer dengan passion dalam mengembangkan solusi teknologi inovatif. Berpengalaman
-            dalam full-stack development, mobile applications, dan emerging technologies seperti AI dan
-            blockchain. Selalu antusias untuk belajar teknologi baru dan menghadapi tantangan dalam dunia software
-            engineering."
+            content="A Software Developer evolving into a well-rounded Software Engineer and Engineer.
+            Focused on building solutions through technology, system design, and creative exploration across both software and hardware domains."
           />
 
           <AboutCard
             title="Expertise"
-            content=" Fokus pada pengembangan aplikasi web modern dengan React, Node.js, dan cloud technologies. Memiliki
-            ketertarikan khusus pada user experience design, performance optimization, dan implementasi best
-            practices dalam software development. Juga aktif dalam fotografi sebagai hobi kreatif di luar dunia
-            coding."
+            content="Specializing in modern cross-platform digital solution development,
+            with a strong emphasis on user experience design, performance optimization, and the implementation of best practices in software development.
+            Also actively engaged in photography as a creative hobby beyond the world of coding."
           />
         </div>
       </div>
