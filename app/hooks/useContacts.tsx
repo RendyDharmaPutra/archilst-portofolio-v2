@@ -4,7 +4,7 @@ import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 export const useContacts = () => {
   return [
     {
-      href: "https://wa.me/08980426333",
+      href: "https://wa.me/+628980426333",
       icon: <Phone className="h-5 sm:h-6 w-5 sm:w-6" />,
     },
     {
