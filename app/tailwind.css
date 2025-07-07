@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-item {
+  @apply text-text-secondary dark:text-text-secondary-dark hover:text-accent dark:hover:text-accent transition-colors duration-300;
+}

@@ -8,6 +8,7 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
+import { Header } from "./components/layouts/header/header";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,6 +34,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="dark">
         <div className="min-h-screen bg-bg dark:bg-bg-dark text-text dark:text-text-dark transition-colors duration-300">
+          {/* Komponen Header */}
+          <Header />
           {children}
         </div>
 
