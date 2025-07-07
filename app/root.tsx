@@ -8,8 +8,8 @@ import {
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
 import "./tailwind.css";
-import { Header } from "./components/layouts/header/header";
-import { Footer } from "./components/layouts/footer/footer";
+import { PageContainter } from "./components/layouts/page-container";
+import { ThemeProvider } from "context/theme-context";
 
 export const meta: MetaFunction = () => {
   return [
@@ -44,13 +44,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="dark">
-        <div className="min-h-screen bg-bg dark:bg-bg-dark text-text dark:text-text-dark transition-colors duration-300">
-          {/* Komponen Header */}
-          <Header />
-          {children}
-          <Footer />
-        </div>
+      <body>
+        <ThemeProvider>
+          <PageContainter>{children}</PageContainter>
+        </ThemeProvider>
 
         <ScrollRestoration />
         <Scripts />

@@ -14,7 +14,7 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-header/90 dark:bg-header-dark/90 backdrop-blur-md border-b border-accent/20 dark:border-accent-dark/30">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-header/90 dark:bg-header-dark/90 backdrop-blur-md border-b border-accent/20 dark:border-accent-dark/30 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo / Brand */}
         <HeaderTitle />
