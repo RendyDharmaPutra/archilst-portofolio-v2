@@ -60,7 +60,7 @@ const ProjectCardHeader = ({
           category === "Public"
             ? "bg-accent text-white"
             : category === "Private"
-            ? "bg-text/20 text-text dark:bg-text-dark/20 dark:text-text-dark"
+            ? "bg-text/20 text-text-dark dark:bg-text-dark/20 dark:text-text-dark"
             : "border border-accent text-accent bg-black/20"
         }`}
       >
