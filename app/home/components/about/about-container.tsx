@@ -1,3 +1,4 @@
+import { SectionHeader } from "../section-header";
 import { AboutCard } from "./about-card";
 
 export const AboutContainer = () => {
@@ -5,12 +6,7 @@ export const AboutContainer = () => {
     <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-accent">
-            ABOUT ME
-          </h2>
-          <div className="h-1 w-24 bg-accent mx-auto"></div>
-        </div>
+        <SectionHeader title="ABOUT ME" />
 
         {/* Card Grid */}
         <div className="grid md:grid-cols-2 gap-8">
