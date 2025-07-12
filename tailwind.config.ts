@@ -35,6 +35,9 @@ export default {
           DEFAULT: "#E2E8F0",
           dark: "#0A0E13",
         },
+        danger: {
+          DEFAULT: "#EF4444",
+        },
       },
     },
   },
