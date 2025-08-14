@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { NavItem } from "./nav-item";
-import { NavigationItemType } from "~/hooks/useNavigationItems";
+import { NavigationItemType } from "~/hooks/use-navigation-items";
 
 // Komponen Navigasi untuk layar Tablet ke atas
 export const DesktopNav = ({

@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import { useContacts } from "~/hooks/useContacts";
+import { useContacts } from "~/hooks/use-contacts";
 
 export const FooterContacts = () => {
   const contacts = useContacts(); // Mengambil data Kontak

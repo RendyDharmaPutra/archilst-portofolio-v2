@@ -9,7 +9,7 @@ import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import { PageContainter } from "./components/layouts/page-container";
-import { ThemeProvider } from "context/theme-context";
+import { ThemeProvider } from "~/context/theme-context";
 
 export const meta: MetaFunction = () => {
   return [

@@ -1,5 +1,5 @@
 import { GetDataType } from "~/types/get-data-type";
-import { supabase } from "~/utils/db";
+import { supabase } from "~/lib/supabase";
 
 export const getPhotos = async (): Promise<GetDataType<string[], string>> => {
   try {

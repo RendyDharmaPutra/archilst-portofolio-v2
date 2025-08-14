@@ -4,7 +4,7 @@ import { DesktopNav } from "./navigation/desktop-nav";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileMenuBtn } from "./mobile-menu-btn";
 import { MobileNav } from "./navigation/mobile-nav";
-import { useNavigationItems } from "~/hooks/useNavigationItems";
+import { useNavigationItems } from "~/hooks/use-navigation-items";
 
 export const Header = () => {
   // Mengambil Item Halaman untuk ditampilkan di Komponen Navigasi

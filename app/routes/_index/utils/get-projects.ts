@@ -1,7 +1,7 @@
 import { PostgrestError } from "@supabase/supabase-js";
 import { GetDataType } from "~/types/get-data-type";
 import { ProjectType } from "~/types/project-type";
-import { supabase } from "~/utils/db";
+import { supabase } from "~/lib/supabase";
 
 export const getProjects = async (): Promise<
   GetDataType<ProjectType[], PostgrestError>

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavItem } from "./nav-item";
 import { ExternalLink } from "lucide-react";
-import { NavigationItemType } from "~/hooks/useNavigationItems";
+import { NavigationItemType } from "~/hooks/use-navigation-items";
 
 // Props
 type MobileNavProps = {
