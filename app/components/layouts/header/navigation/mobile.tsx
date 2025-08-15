@@ -14,7 +14,7 @@ export const MobileNav: React.FC<MobileNavProps> = (props) => {
   // Hanya menampilkan element ketika State isMobileMenu (dari Komponen Header) bernilaai true
   if (props.isMobileMenuOpen)
     return (
-      <div className="md:hidden bg-header/95 dark:bg-header-dark/95 backdrop-blur-lg px-6 py-4">
+      <div className="md:hidden px-6 py-4 bg-primary-background/95 dark:bg-primary-background-dark/95 backdrop-blur-lg animate">
         <nav className="flex flex-col gap-4">
           {/* Navigasi Halaman */}
           {props.navItems.map((navItem, idx) => (
@@ -31,7 +31,7 @@ export const MobileNav: React.FC<MobileNavProps> = (props) => {
             to="https://drive.google.com/file/d/your-cv-file-id/view" // ! Ubah dengan Link CV yang asli
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1"
+            className="font-medium flex items-center gap-1"
           >
             <ExternalLink className="h-3 w-3" />
           </NavItem>

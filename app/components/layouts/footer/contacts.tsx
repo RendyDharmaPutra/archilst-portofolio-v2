@@ -12,7 +12,7 @@ export const FooterContacts = () => {
           to={contact.href}
           target="_blank"
           rel="noreferrer"
-          className="text-text-muted dark:text-text-muted-dark hover:text-accent dark:hover:text-accent transition-colors duration-300"
+          className="text-tertiary-text dark:text-tertiary-text-dark hover:text-primary-accent dark:hover:text-primary-accent-dark animate"
         >
           {contact.icon}
         </Link>

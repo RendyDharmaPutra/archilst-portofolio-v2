@@ -7,11 +7,11 @@ export const HeroSection = () => {
   return (
     <section
       id="beranda"
-      className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden pt-20"
+      className="relative px-4 pt-20 flex justify-center items-center min-h-screen overflow-hidden"
     >
       <HeroBackground />
 
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
+      <div className="relative z-10 mx-auto text-center max-w-4xl">
         {/* Profile Photo */}
         <HeroImage />
 

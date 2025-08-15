@@ -12,12 +12,7 @@ export const DesktopNav = ({
     <nav className="hidden md:flex gap-8">
       {/* Navigasi Halaman */}
       {navItems.map((navItem, idx) => (
-        <NavItem
-          key={idx}
-          to={navItem.route}
-          title={navItem.title}
-          className="nav-item font-medium"
-        />
+        <NavItem key={idx} to={navItem.route} title={navItem.title} />
       ))}
       {/* Navigasi CV */}
       <NavItem
@@ -25,7 +20,7 @@ export const DesktopNav = ({
         to="https://drive.google.com/file/d/your-cv-file-id/view" // ! Ubah dengan Link CV yang asli
         target="_blank"
         rel="noopener noreferrer"
-        className="nav-item font-medium flex items-center gap-1"
+        className="font-medium flex items-center gap-1"
       >
         <ExternalLink className="h-3 w-3" />
       </NavItem>

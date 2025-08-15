@@ -1,8 +1,10 @@
 export const FooterHeadline = () => {
   return (
     <div className="text-center md:text-left">
-      <h3 className="text-2xl font-bold text-accent mb-2">RENDY DHARMAPUTRA</h3>
-      <p className="text-text-muted dark:text-text-muted-dark">
+      <h3 className="mb-2 font-bold text-2xl text-primary-accent dark:text-primary-accent-dark animate">
+        RENDY DHARMAPUTRA
+      </h3>
+      <p className="text-tertiary-text dark:text-tertiary-text-dark animate">
         Software Developer & Programmer
       </p>
     </div>

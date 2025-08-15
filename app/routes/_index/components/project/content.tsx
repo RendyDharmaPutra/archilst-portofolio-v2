@@ -6,7 +6,7 @@ export const ProjectsContent = () => {
   const { projectsResponse } = useLoaderData<HomeLoaderData>();
 
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+    <div className="mb-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {projectsResponse.data!.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}

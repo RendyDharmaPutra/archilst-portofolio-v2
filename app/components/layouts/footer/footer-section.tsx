@@ -3,7 +3,7 @@ import { FooterCopyrights } from "./copyrights";
 
 export const FooterSection = () => {
   return (
-    <footer className="bg-footer dark:bg-footer-dark py-12 px-4 border-t border-accent/20 dark:border-accent-dark/30 transition-all duration-300">
+    <footer className="py-12 px-4 border-t border-primary-accent/20 dark:border-primary-accent-dark/30 bg-primary-background dark:bg-primary-background-dark animate">
       <div className="max-w-6xl mx-auto">
         {/* Content Component */}
         <FooterContent />

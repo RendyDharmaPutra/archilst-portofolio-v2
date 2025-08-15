@@ -13,7 +13,7 @@ export const ProjectsSection = () => {
   return (
     <section
       id="projek"
-      className="py-20 px-4 bg-bg/70 dark:bg-bg-dark/50 transition-colors duration-300"
+      className="py-20 px-4 bg-primary-background/70 dark:bg-primary-background-dark/50 animate"
     >
       <div className="max-w-7xl mx-auto">
         <SectionHeader title="PROJECT HIGHLIGHT" />

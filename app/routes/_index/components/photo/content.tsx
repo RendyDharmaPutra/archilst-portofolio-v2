@@ -6,7 +6,7 @@ export const PhotosContent = () => {
   const { photosResponse } = useLoaderData<HomeLoaderData>();
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
+    <div className="mb-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* Menampilkan semua data foto */}
       {photosResponse.data!.map((photo, index) => (
         <PhotoCard key={index} idx={index} photo={photo} />

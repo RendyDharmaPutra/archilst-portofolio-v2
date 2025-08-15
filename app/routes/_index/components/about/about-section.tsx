@@ -4,7 +4,7 @@ import { AboutCard } from "./about-card";
 export const AboutSection = () => {
   return (
     <section className="py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto max-w-6xl">
         {/* Header */}
         <SectionHeader title="ABOUT ME" />
 

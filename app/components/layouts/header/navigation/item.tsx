@@ -7,10 +7,14 @@ type NavItemProps = LinkProps & {
 };
 
 // Komponen setiap Item Halaman
-export const NavItem: React.FC<NavItemProps> = ({ title, ...props }) => {
+export const NavItem: React.FC<NavItemProps> = ({
+  title,
+  className,
+  ...props
+}) => {
   return (
     <Link
-      className={`${props.className ? props.className : "nav-item"}`} // Mengatur nilai className default jika props className kosong. karena className yang didefinisikan di sini tidak terbaca jika className dari props ada nilainya
+      className={`${className} text-secondary-text dark:text-secondary-text-dark hover:text-primary-accent dark:hover:text-primary-accent-dark animate`} // Mengatur nilai className default jika props className kosong. karena className yang didefinisikan di sini tidak terbaca jika className dari props ada nilainya
       {...props}
     >
       {title}

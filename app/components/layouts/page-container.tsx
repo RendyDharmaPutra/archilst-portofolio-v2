@@ -12,7 +12,7 @@ export const PageContainer = ({ children }: { children: React.ReactNode }) => {
         // animate={{ scale: 1 }}
         // exit={{ scale: 0.98 }}
         // transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-        className={` min-h-screen bg-bg dark:bg-bg-dark text-text dark:text-text-dark transition-colors duration-300`}
+        className={` min-h-screen bg-primary-background dark:bg-primary-background-dark text-primary-text dark:text-primary-text-dark animate`}
       >
         {/* Komponen Header */}
         <HeaderSection />

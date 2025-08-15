@@ -7,7 +7,7 @@ type MobileMenuBtnProps = {
 export const MobileMenuBtn: React.FC<MobileMenuBtnProps> = (props) => {
   return (
     <button
-      className="md:hidden text-text dark:text-text-dark hover:text-accent dark:hover:text-accent transition-colors"
+      className="md:hidden text-primary-text dark:text-primary-text-dark hover:text-primary-accent dark:hover:text-primary-accent-dark animate"
       onClick={() => props.setIsMobileMenuOpen((prev) => !prev)}
     >
       <svg

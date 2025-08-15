@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div
       key={id}
-      className={`rounded-lg overflow-hidden bg-card dark:bg-card-dark border border-accent/20 dark:border-accent/30 hover:border-accent dark:hover:border-accent transition-all duration-300 dark:hover:shadow-[0_0_20px_rgba(0,128,255,0.1)] hover:shadow-[0_0_20px_rgba(0,128,255,0.15)] shadow-lg group`}
+      className={`group rounded-lg border border-primary-accent/20 dark:border-primary-accent-dark/30 hover:border-primary-accent dark:hover:border-primary-accent-dark bg-primary-background dark:bg-primary-background-dark shadow-lg hover:shadow-[0_0_20px_rgba(0,128,255,0.15)] dark:hover:shadow-[0_0_20px_rgba(0,102,204,0.1)] overflow-hidden animate`}
     >
       <ProjectCardHeader
         title={title}
@@ -50,19 +50,19 @@ const ProjectCardHeader = ({
       <img
         src={thumbnail_url || "/placeholder.svg"}
         alt={title}
-        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+        className="w-full h-48 object-cover animate group-hover:scale-110"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 animate" />
 
       {/* Badge Kategori */}
       <div
-        className={`absolute top-3 right-3 text-xs px-3 py-0.5 rounded-full  transition-colors duration-300 ${
+        className={`absolute top-3 right-3 px-3 py-0.5 text-xs rounded-full ${
           category === "Public"
-            ? "bg-accent text-white"
+            ? "bg-primary-accent dark:bg-primary-accent-dark text-white"
             : category === "Private"
-            ? "bg-text/20 text-text-dark dark:bg-text-dark/20 dark:text-text-dark"
-            : "border border-accent text-accent bg-black/20"
-        }`}
+            ? "bg-primary-text/20 text-primary-text dark:bg-primary-text-dark/20 dark:text-primary-text-dark"
+            : "border border-primary-accent dark:border-primary-accent-dark text-primary-accent dark:text-primary-accent-dark bg-black/20"
+        } animate`}
       >
         {category}
       </div>
@@ -81,16 +81,20 @@ const ProjectCardContent = ({
     <div className="p-6 flex flex-col justify-between">
       <div className="mb-4">
         <h3
-          className={`text-xl font-bold text-text dark:text-text-dark group-hover:text-accent transition-colors mb-2`}
+          className={`mb-2 font-bold text-xl text-primary-text dark:text-primary-text-dark group-hover:text-primary-accent dark:group-hover:text-primary-accent-dark animate`}
         >
           {title}
         </h3>
-        <p className={`text-sm text-text-muted dark:text-text-dark mb-3`}>
+        <p
+          className={`mb-3 text-sm text-tertiary-text dark:text-tertiary-text-dark animate`}
+        >
           {formatDate(publish_date)}
         </p>
       </div>
 
-      <p className={`text-text-muted dark:text-text-dark mb-6 leading-relaxed`}>
+      <p
+        className={`mb-6 leading-relaxed text-tertiary-text dark:text-tertiary-text-dark animate`}
+      >
         {description}
       </p>
 
@@ -98,7 +102,7 @@ const ProjectCardContent = ({
       <div className="flex gap-3">
         <Link
           to={`/projects/${slug}`} // Ganti dengan slug atau ID jika perlu
-          className="flex-1 border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 bg-transparent px-4 py-2 rounded-md text-sm font-medium flex items-center justify-center gap-2"
+          className="flex-1 px-4 py-2 flex items-center justify-center gap-2 font-medium text-sm text-primary-accent dark:text-primary-accent-dark hover:text-white dark:hover:text-white rounded-md border border-primary-accent dark:border-primary-accent-dark bg-transparent hover:bg-primary-accent dark:hover:bg-primary-accent-dark animate"
         >
           <Eye className="h-4 w-4" />
           Detail
@@ -109,7 +113,7 @@ const ProjectCardContent = ({
             to={demo_url} // Ganti dengan target URL jika eksternal, gunakan <a> jika href eksternal
             target="_blank"
             rel="noreferrer"
-            className="flex-1 bg-accent hover:bg-accent/80 text-white hover:shadow-[0_0_15px_rgba(0,128,255,0.4)] transition-all duration-300 px-4 py-2 rounded-md text-sm font-medium flex items-center justify-center gap-2"
+            className="flex-1 px-4 py-2 flex items-center justify-center gap-2 font-medium text-sm rounded-md bg-primary-accent hover:bg-primary-accent/80 dark:bg-primary-accent-dark dark:hover:bg-primary-accent-dark/80 text-white hover:shadow-[0_0_15px_rgba(0,128,255,0.4)] dark:hover:shadow-[0_0_15px_rgba(0,102,204,0.4)] animate"
           >
             <ExternalLink className="h-4 w-4" />
             Visit

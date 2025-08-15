@@ -2,15 +2,15 @@ export const HeroContent = () => {
   return (
     <>
       {/* Name */}
-      <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-text via-accent to-text dark:from-text-dark dark:via-accent dark:to-text-dark">
+      <h1 className="mb-4 font-bold text-5xl sm:text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-primary-text via-primary-accent to-primary-text dark:from-primary-text-dark dark:via-primary-accent-dark dark:to-primary-text-dark animate">
         RENDY DHARMAPUTRA
       </h1>
 
       {/* Underline */}
-      <div className="h-1 w-32 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-6"></div>
+      <div className="mx-auto mb-6 h-1 w-32 bg-gradient-to-r from-transparent via-primary-accent to-transparent dark:from-transparent dark:via-primary-accent-dark dark:to-transparent animate"></div>
 
       {/* Subtitle */}
-      <p className="text-xl md:text-2xl font-light tracking-wide text-text-secondary dark:text-text-dark/80">
+      <p className="font-light text-xl md:text-2xl tracking-wide text-secondary-text dark:text-secondary-text-dark animate">
         Software Developer & Programmer
       </p>
     </>

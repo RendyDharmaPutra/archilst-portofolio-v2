@@ -12,7 +12,7 @@ export const PhotosSection = () => {
 
   return (
     <section id="fotografi" className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         {/* Judul Section */}
         <SectionHeader title="PHOTOGRAPH HIGHLIGHT" />
 
