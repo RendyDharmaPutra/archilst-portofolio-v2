@@ -1,7 +1,7 @@
-import { AboutContainer } from "./components/about/about-container";
-import { HeroContainer } from "./components/hero/hero-container";
-import { PhotosContainer } from "./components/photo/photos-container";
-import { ProjectsContainer } from "./components/project/projects-container";
+import { HeroSection } from "./components/hero/hero-section";
+import { AboutSection } from "./components/about/about-section";
+import { ProjectsSection } from "./components/project/projects-section";
+import { PhotosSection } from "./components/photo/photos-section";
 import { readHighlightPhotosService } from "./services/read-highlight-photos";
 import { readHighlightProjectsService } from "./services/read-highlight-projects";
 import { HomeLoaderData } from "./types/loader-data";
@@ -21,10 +21,10 @@ export async function loader(): Promise<HomeLoaderData> {
 export default function Index() {
   return (
     <>
-      <HeroContainer />
-      <AboutContainer />
-      <ProjectsContainer />
-      <PhotosContainer />
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <PhotosSection />
     </>
   );
 }

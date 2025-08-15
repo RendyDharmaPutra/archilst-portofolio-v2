@@ -1,5 +1,5 @@
-import { FooterContacts } from "./footer-contacts";
-import { FooterHeadline } from "./footer-headline";
+import { FooterContacts } from "./contacts";
+import { FooterHeadline } from "./headline";
 
 export const FooterContent = () => {
   return (

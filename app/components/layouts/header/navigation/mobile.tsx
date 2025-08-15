@@ -1,5 +1,5 @@
 import React from "react";
-import { NavItem } from "./nav-item";
+import { NavItem } from "./item";
 import { ExternalLink } from "lucide-react";
 import { NavigationItemType } from "~/hooks/use-navigation-items";
 

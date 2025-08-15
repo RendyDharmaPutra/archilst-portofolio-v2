@@ -1,9 +1,9 @@
-import { HeroImage } from "./hero-image";
-import { HeroContent } from "./hero-content";
-import { HeroContacts } from "./hero-contacts";
-import { HeroBackground } from "./hero-background";
+import { HeroImage } from "./image";
+import { HeroContent } from "./content";
+import { HeroContacts } from "./contacts";
+import { HeroBackground } from "./background";
 
-export const HeroContainer = () => {
+export const HeroSection = () => {
   return (
     <section
       id="beranda"

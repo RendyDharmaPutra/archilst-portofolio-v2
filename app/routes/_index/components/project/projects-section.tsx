@@ -1,13 +1,13 @@
 import { useLoaderData } from "@remix-run/react";
 import { SectionHeader } from "../section-header";
-import { ProjectsContent } from "./projects-content";
-import { ProjectsFooter } from "./projects-footer";
+import { ProjectsContent } from "./content";
+import { ProjectsFooter } from "./footer";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { FileX } from "lucide-react";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
 import { HomeLoaderData } from "../../types/loader-data";
 
-export const ProjectsContainer = () => {
+export const ProjectsSection = () => {
   const { projectsResponse } = useLoaderData<HomeLoaderData>();
 
   return (

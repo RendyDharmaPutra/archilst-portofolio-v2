@@ -8,7 +8,7 @@ import {
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
 import "./tailwind.css";
-import { PageContainter } from "./components/layouts/page-container";
+import { PageContainer } from "./components/layouts/page-container";
 import { ThemeProvider } from "~/context/theme-context";
 
 export const meta: MetaFunction = () => {
@@ -46,7 +46,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <ThemeProvider>
-          <PageContainter>{children}</PageContainter>
+          <PageContainer>{children}</PageContainer>
         </ThemeProvider>
 
         <ScrollRestoration />

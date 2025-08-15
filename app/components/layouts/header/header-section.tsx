@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { HeaderTitle } from "./header-title";
-import { DesktopNav } from "./navigation/desktop-nav";
+import { HeaderTitle } from "./title";
+import { DesktopNav } from "./navigation/desktop";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileMenuBtn } from "./mobile-menu-btn";
-import { MobileNav } from "./navigation/mobile-nav";
+import { MobileNav } from "./navigation/mobile";
 import { useNavigationItems } from "~/hooks/use-navigation-items";
 
-export const Header = () => {
+export const HeaderSection = () => {
   // Mengambil Item Halaman untuk ditampilkan di Komponen Navigasi
   const navItems = useNavigationItems();
 
