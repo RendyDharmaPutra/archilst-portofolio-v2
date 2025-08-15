@@ -1,7 +1,9 @@
-import { GetDataType } from "~/types/get-data-type";
+import { ServerResponseType } from "~/types/server-response-type";
 import { supabase } from "~/lib/supabase";
 
-export const getPhotos = async (): Promise<GetDataType<string[], string>> => {
+export const getPhotos = async (): Promise<
+  ServerResponseType<string[], string>
+> => {
   try {
     const { data, error } = await supabase.storage
       .from("photographs")

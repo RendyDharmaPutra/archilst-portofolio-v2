@@ -5,10 +5,10 @@ import { ProjectsFooter } from "./projects-footer";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { FileX } from "lucide-react";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
-import { HomeDataType } from "../../types/home-data-type";
+import { HomeLoaderData } from "../../types/loader-data";
 
 export const ProjectsContainer = () => {
-  const { projects } = useLoaderData<HomeDataType>();
+  const { projects } = useLoaderData<HomeLoaderData>();
 
   return (
     <section

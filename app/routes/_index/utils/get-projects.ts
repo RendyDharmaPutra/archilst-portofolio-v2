@@ -1,10 +1,10 @@
 import { PostgrestError } from "@supabase/supabase-js";
-import { GetDataType } from "~/types/get-data-type";
-import { ProjectType } from "~/types/project-type";
+import { ServerResponseType } from "~/types/server-response-type";
+import { ProjectType } from "~/types/models/project-type";
 import { supabase } from "~/lib/supabase";
 
 export const getProjects = async (): Promise<
-  GetDataType<ProjectType[], PostgrestError>
+  ServerResponseType<ProjectType[], PostgrestError>
 > => {
   try {
     const { data, error } = await supabase

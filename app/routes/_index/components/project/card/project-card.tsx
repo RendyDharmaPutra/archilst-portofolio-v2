@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 import { ExternalLink, Eye } from "lucide-react";
 import React from "react";
 import { formatDate } from "~/utils/formatter/date-formatter";
-import { ProjectType } from "~/types/project-type";
+import { ProjectType } from "~/types/models/project-type";
 
 type ProjectCardProps = ProjectType;
 

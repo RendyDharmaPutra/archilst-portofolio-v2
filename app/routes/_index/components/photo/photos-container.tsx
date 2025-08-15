@@ -5,10 +5,10 @@ import { PhotosFooter } from "./photos-footer";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { Image } from "lucide-react";
-import { HomeDataType } from "../../types/home-data-type";
+import { HomeLoaderData } from "../../types/loader-data";
 
 export const PhotosContainer = () => {
-  const { photos } = useLoaderData<HomeDataType>();
+  const { photos } = useLoaderData<HomeLoaderData>();
 
   return (
     <section id="fotografi" className="py-20 px-4">

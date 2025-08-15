@@ -1,4 +1,4 @@
-export type GetDataType<T, R> = {
+export type ServerResponseType<T, R> = {
   success: boolean;
   message: string | R;
   data: T | null;
