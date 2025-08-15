@@ -8,7 +8,7 @@ import { ErrorBoundary } from "~/components/boundaries/error-boundary";
 import { HomeLoaderData } from "../../types/loader-data";
 
 export const ProjectsContainer = () => {
-  const { projects } = useLoaderData<HomeLoaderData>();
+  const { projectsResponse } = useLoaderData<HomeLoaderData>();
 
   return (
     <section
@@ -19,9 +19,9 @@ export const ProjectsContainer = () => {
         <SectionHeader title="PROJECT HIGHLIGHT" />
 
         {/* Showing Boundary on certain conditions */}
-        {!projects.success ? (
+        {!projectsResponse.success ? (
           <ErrorBoundary description="An error occurred while accessing the projects data. Please try again in a moment." />
-        ) : projects.data!.length < 1 ? (
+        ) : projectsResponse.data!.length < 1 ? (
           <EmptyBoundary
             title="EMPTY PROJECTS"
             description="Exciting projects are currently under development. Stay tuned for the latest updates!"

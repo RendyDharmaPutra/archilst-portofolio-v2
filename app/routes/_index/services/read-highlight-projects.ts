@@ -3,7 +3,7 @@ import { ServerResponseType } from "~/types/server-response-type";
 import { ProjectType } from "~/types/models/project-type";
 import { supabase } from "~/lib/supabase";
 
-export const getProjects = async (): Promise<
+export const readHighlightProjectsService = async (): Promise<
   ServerResponseType<ProjectType[], PostgrestError>
 > => {
   try {

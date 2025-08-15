@@ -8,7 +8,7 @@ import { Image } from "lucide-react";
 import { HomeLoaderData } from "../../types/loader-data";
 
 export const PhotosContainer = () => {
-  const { photos } = useLoaderData<HomeLoaderData>();
+  const { photosResponse } = useLoaderData<HomeLoaderData>();
 
   return (
     <section id="fotografi" className="py-20 px-4">
@@ -16,9 +16,9 @@ export const PhotosContainer = () => {
         {/* Judul Section */}
         <SectionHeader title="PHOTOGRAPH HIGHLIGHT" />
 
-        {!photos.success ? (
+        {!photosResponse.success ? (
           <ErrorBoundary description="An error occurred while accessing the projects data. Please try again in a moment." />
-        ) : photos.data!.length < 1 ? (
+        ) : photosResponse.data!.length < 1 ? (
           <EmptyBoundary
             title="EMPTY GALERIES"
             description="A photography collection is under construction. Come back soon to see the latest work!"

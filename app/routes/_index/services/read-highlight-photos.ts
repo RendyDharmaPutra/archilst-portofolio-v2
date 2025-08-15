@@ -1,7 +1,7 @@
 import { ServerResponseType } from "~/types/server-response-type";
 import { supabase } from "~/lib/supabase";
 
-export const getPhotos = async (): Promise<
+export const readHighlightPhotosService = async (): Promise<
   ServerResponseType<string[], string>
 > => {
   try {
