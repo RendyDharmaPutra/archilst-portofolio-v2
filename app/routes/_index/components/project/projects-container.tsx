@@ -5,7 +5,7 @@ import { ProjectsFooter } from "./projects-footer";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { FileX } from "lucide-react";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
-import { HomeDataType } from "~/home/types/home-data-type";
+import { HomeDataType } from "../../types/home-data-type";
 
 export const ProjectsContainer = () => {
   const { projects } = useLoaderData<HomeDataType>();

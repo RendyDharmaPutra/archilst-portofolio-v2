@@ -2,10 +2,10 @@ import { useLoaderData } from "@remix-run/react";
 import { SectionHeader } from "../section-header";
 import { PhotosContent } from "./photos-content";
 import { PhotosFooter } from "./photos-footer";
-import { HomeDataType } from "~/home/types/home-data-type";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { Image } from "lucide-react";
+import { HomeDataType } from "../../types/home-data-type";
 
 export const PhotosContainer = () => {
   const { photos } = useLoaderData<HomeDataType>();
