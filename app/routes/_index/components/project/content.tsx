@@ -1,5 +1,5 @@
+import { ProjectCard } from "~/components/cards/project/project-card";
 import { HomeLoaderData } from "../../types/loader-data";
-import { ProjectCard } from "../../../../components/cards/project-card";
 import { useLoaderData } from "@remix-run/react";
 
 export const ProjectsContent = () => {
