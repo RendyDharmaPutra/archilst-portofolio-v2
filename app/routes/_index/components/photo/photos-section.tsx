@@ -1,11 +1,11 @@
 import { useLoaderData } from "@remix-run/react";
 import { SectionHeader } from "../section-header";
 import { PhotosContent } from "./content";
-import { PhotosFooter } from "./footer";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { Image } from "lucide-react";
 import { HomeLoaderData } from "../../types/loader-data";
+import { SectionFooter } from "../section-footer";
 
 export const PhotosSection = () => {
   const { photosResponse } = useLoaderData<HomeLoaderData>();
@@ -30,7 +30,11 @@ export const PhotosSection = () => {
             <PhotosContent />
 
             {/* Tombol Aksi */}
-            <PhotosFooter />
+            <SectionFooter
+              label="See All Photos"
+              route="/photos"
+              variant="outline"
+            />
           </>
         )}
       </div>

@@ -1,11 +1,11 @@
 import { useLoaderData } from "@remix-run/react";
 import { SectionHeader } from "../section-header";
 import { ProjectsContent } from "./content";
-import { ProjectsFooter } from "./footer";
 import { EmptyBoundary } from "~/components/boundaries/empty-boundary";
 import { FileX } from "lucide-react";
 import { ErrorBoundary } from "~/components/boundaries/error-boundary";
 import { HomeLoaderData } from "../../types/loader-data";
+import { SectionFooter } from "../section-footer";
 
 export const ProjectsSection = () => {
   const { projectsResponse } = useLoaderData<HomeLoaderData>();
@@ -30,7 +30,11 @@ export const ProjectsSection = () => {
         ) : (
           <>
             <ProjectsContent />
-            <ProjectsFooter />
+            <SectionFooter
+              label="See All Projects"
+              route="/projects"
+              variant="filled"
+            />
           </>
         )}
       </div>
