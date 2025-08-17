@@ -8,15 +8,15 @@ export function useNavigationItems(): NavigationItemType[] {
   return [
     {
       route: "/",
-      title: "Beranda",
+      title: "Home",
     },
     {
-      route: "/project",
-      title: "Projek",
+      route: "/projects",
+      title: "Projects",
     },
     {
-      route: "/photograph",
-      title: "Fotografi",
+      route: "/photographs",
+      title: "Photographs",
     },
   ];
 }
