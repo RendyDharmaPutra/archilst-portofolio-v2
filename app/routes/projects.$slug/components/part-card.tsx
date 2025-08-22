@@ -1,9 +1,9 @@
 import { Github } from "lucide-react";
 import { ActionBtn } from "./action-btn";
 import { useVariantStyle } from "~/hooks/use-variant-style";
-import { ProjectPartStacks } from "~/types/models/project-part-stacks";
+import { ProjectPartStacksType } from "~/types/models/project-part-stacks";
 
-type PartCardProps = ProjectPartStacks & {};
+type PartCardProps = ProjectPartStacksType & {};
 
 export const PartCard = ({
   title,
