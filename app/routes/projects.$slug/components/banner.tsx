@@ -9,7 +9,7 @@ export const ProjectBanner = ({ title, thumbnail_url }: ProjectBannerProps) => {
         <img
           src={thumbnail_url}
           alt={title}
-          className="w-full h-[600px] object-cover"
+          className="w-full h-fit lg:h-[600px] object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
       </div>
