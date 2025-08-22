@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.headline-gradient {
+  @apply text-transparent bg-gradient-to-r from-primary-background-dark dark:from-primary-background via-primary-accent dark:via-primary-accent-dark to-primary-background-dark dark:to-primary-background bg-clip-text;
+}
+
 .animate {
   @apply transition-all duration-300;
 }
