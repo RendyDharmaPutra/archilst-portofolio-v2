@@ -1,3 +1,4 @@
+import { useNavigation } from "@remix-run/react";
 import { LucideProps, RefreshCw } from "lucide-react";
 import React from "react";
 
@@ -106,7 +107,7 @@ const BaseBoundaryFooter = ({
   return (
     <section className="flex flex-col sm:flex-row gap-3">
       <button
-        onClick={() => {}}
+        onClick={() => window.location.reload()}
         className={`px-4 py-2 flex-1 flex items-center justify-center gap-2 font-medium text-sm rounded-md text-white ${
           isEmptyVariant
             ? "bg-primary-accent dark:bg-primary-accent-dark hover:bg-primary-accent/80 dark:hover:bg-primary-accent-dark/80 hover:shadow-[0_0_15px_rgba(0,128,255,0.1)] dark:hover:shadow-[0_0_15px_rgba(0,102,204,0.1)]"
