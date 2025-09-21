@@ -28,7 +28,7 @@ export const MobileNav: React.FC<MobileNavProps> = (props) => {
           {/* Navigasi CV */}
           <NavItem
             title="Resume"
-            to="https://drive.google.com/file/d/your-cv-file-id/view" // ! Ubah dengan Link CV yang asli
+            to="https://drive.google.com/file/d/1MRp8TakjFu1lNW87Jt-t-vFR_2Wj-Wvm/view?usp=sharing" // ! Ubah dengan Link CV yang asli
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium flex items-center gap-1"
