@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PageHeadline } from "./components/page-headline";
+import { PageHeadline } from "../../components/ui/page-headline";
 import { FilterTabs } from "./components/filter-tabs";
 import { ProjectsSection } from "./components/projects-section";
 import { readProjectsService } from "./services/read-projects";
