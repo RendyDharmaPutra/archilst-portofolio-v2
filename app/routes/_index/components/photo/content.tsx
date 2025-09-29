@@ -1,5 +1,5 @@
 import { useLoaderData } from "@remix-run/react";
-import { PhotoCard } from "../../../../components/cards/photo-card";
+import { PhotoCard } from "./photo-card";
 import { HomeLoaderData } from "../../types/loader-data";
 
 export const PhotosContent = () => {
