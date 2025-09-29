@@ -17,7 +17,7 @@ export const DesktopNav = ({
       {/* Navigasi CV */}
       <NavItem
         title="Resume"
-        to="https://drive.google.com/file/d/1MRp8TakjFu1lNW87Jt-t-vFR_2Wj-Wvm/view?usp=sharing"
+        to="https://drive.google.com/file/d/1j85kLGL466TXXhttdspDRWeqY2TFH9jF/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="font-medium flex items-center gap-1"
