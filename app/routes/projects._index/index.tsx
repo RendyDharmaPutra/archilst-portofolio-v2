@@ -18,7 +18,11 @@ export default function ProjectsPage() {
 
   return (
     <main className="mx-auto px-4 py-32 flex flex-col gap-16 max-w-7xl">
-      <PageHeadline />
+      <PageHeadline
+        title="PROJECTS"
+        description="Showcasing my work in software, engineering, and creative technology.
+        From experimental prototypes to production-ready applications."
+      />
 
       <FilterTabs
         categories={categories}
