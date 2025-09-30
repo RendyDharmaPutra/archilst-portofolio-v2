@@ -7,7 +7,7 @@ export const readHighlightPhotosService = async (): Promise<
   try {
     const { data, error } = await supabase.storage
       .from("photographs")
-      .list("", { limit: 100 });
+      .list("", { limit: 12 });
 
     if (error) {
       return {
