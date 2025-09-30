@@ -6,7 +6,7 @@ import { HeroBackground } from "./background";
 export const HeroSection = () => {
   return (
     <section
-      id="beranda"
+      id="home"
       className="relative px-4 pt-20 flex justify-center items-center min-h-screen overflow-hidden"
     >
       <HeroBackground />

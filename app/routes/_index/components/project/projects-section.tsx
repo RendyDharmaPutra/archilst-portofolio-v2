@@ -12,7 +12,7 @@ export const ProjectsSection = () => {
 
   return (
     <section
-      id="projek"
+      id="projects"
       className="py-20 px-4 bg-primary-background/70 dark:bg-primary-background-dark/50 animate"
     >
       <div className="max-w-7xl mx-auto">

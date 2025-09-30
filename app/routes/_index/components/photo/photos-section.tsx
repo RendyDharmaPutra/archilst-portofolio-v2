@@ -11,7 +11,7 @@ export const PhotosSection = () => {
   const { photosResponse } = useLoaderData<HomeLoaderData>();
 
   return (
-    <section id="fotografi" className="py-20 px-4">
+    <section id="photographs" className="py-20 px-4">
       <div className="mx-auto max-w-7xl">
         {/* Judul Section */}
         <SectionHeader title="PHOTOGRAPH HIGHLIGHT" />
