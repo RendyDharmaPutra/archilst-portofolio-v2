@@ -7,7 +7,7 @@ export const PhotoCard = ({ idx, photo }: { idx: number; photo: string }) => {
     >
       {/* Photo */}
       <img
-        src={photo || "/placeholder.svg"}
+        src={photo}
         loading="lazy"
         alt={`Photography ${idx + 1}`}
         className="w-full h-[300px] object-cover group-hover:scale-110 transform-gpu will-change-transform animate"
