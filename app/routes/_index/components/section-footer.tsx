@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 type SectionFooterProps = {
   label: string;
-  route: "/projects" | "/photos";
+  route: "/projects" | "/photographs";
   variant?: "outline" | "filled";
 };
 

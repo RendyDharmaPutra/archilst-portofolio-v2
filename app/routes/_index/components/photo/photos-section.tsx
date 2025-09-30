@@ -32,7 +32,7 @@ export const PhotosSection = () => {
             {/* Tombol Aksi */}
             <SectionFooter
               label="See All Photos"
-              route="/photos"
+              route="/photographs"
               variant="outline"
             />
           </>
