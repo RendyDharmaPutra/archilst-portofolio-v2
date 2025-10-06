@@ -2,7 +2,7 @@ export type ProjectType = {
   id: number;
   slug: string;
   title: string;
-  description?: string;
+  description: string;
   category: string;
   thumbnail_url: string;
   demo_url?: string;
