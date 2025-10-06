@@ -3,6 +3,8 @@ import { PageHeadline } from "../../components/ui/page-headline";
 import { FilterTabs } from "./components/filter-tabs";
 import { ProjectsSection } from "./components/projects-section";
 import { readProjectsService } from "./services/read-projects";
+import { MetaFunction } from "@remix-run/node";
+import { createMeta } from "~/utils/seo";
 
 export async function loader() {
   const projectsResponse = await readProjectsService();
@@ -11,6 +13,14 @@ export async function loader() {
     projectsResponse,
   };
 }
+
+export const meta: MetaFunction = () =>
+  createMeta({
+    title: "Projects",
+    description:
+      "Showcasing my work in software, engineering, and creative technology. From experimental prototypes to production-ready applications.",
+    url: "https://archilst.my.id/projects",
+  });
 
 export default function ProjectsPage() {
   const categories = ["All", "Public", "Private", "Experimental"];
