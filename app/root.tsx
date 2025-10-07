@@ -1,9 +1,11 @@
 import {
+  json,
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
@@ -24,7 +26,24 @@ export const links: LinksFunction = () => [
   },
 ];
 
+export function loader() {
+  const globalSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Archilst",
+    url: "https://archilst.my.id",
+    creator: {
+      "@type": "Person",
+      name: "Archilst",
+      jobTitle: "Software Engineer",
+    },
+  };
+  return json({ globalSchema });
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  const { globalSchema } = useLoaderData<typeof loader>();
+
   return (
     <html lang="en">
       <head>
@@ -32,6 +51,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(globalSchema),
+          }}
+        />
       </head>
       <body>
         <ThemeProvider>
